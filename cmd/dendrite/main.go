@@ -40,8 +40,8 @@ var (
 	)
 	httpBindAddr  = flag.String("http-bind-address", ":8008", "The HTTP listening port for the server")
 	httpsBindAddr = flag.String("https-bind-address", ":8448", "The HTTPS listening port for the server")
-	certFile      = flag.String("tls-cert", "", "The PEM formatted X509 certificate to use for TLS")
-	keyFile       = flag.String("tls-key", "", "The PEM private key to use for TLS")
+	certFile      = flag.String("tls-cert", "server.crt", "The PEM formatted X509 certificate to use for TLS")
+	keyFile       = flag.String("tls-key", "server.key", "The PEM private key to use for TLS")
 )
 
 func main() {
